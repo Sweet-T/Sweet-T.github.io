@@ -310,16 +310,17 @@
 </div>
 <!-- 每日一图Bing -->
 <script>
-    $.ajax({
-        type: "get",
-        url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
-        crossDomain: true,
-        success: function (response) {
-            console.log(response)
-            picurl = 'https://cn.bing.com' + response.images['url']
-            $('.bg-cover').css('background-image', 'url(' + picurl + ')');
-        }
-    });
+    // $.ajax({
+    //     type: "get",
+    //     url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+    //     crossDomain: true,
+    //     success: function (response) {
+    //         console.log(response)
+    //         picurl = 'https://cn.bing.com' + response.images['url']
+    //         $('.bg-cover').css('background-image', 'url(' + picurl + ')');
+    //     }
+    // });
+    $('.bg-cover').css('background-image', 'url("http://pic.netbian.com/uploads/allimg/190917/183634-1568716594f366.jpg")');
 </script>
     </div>
 </div>
@@ -335,32 +336,6 @@
             </div>
         </div>
         <div class="card">
-            
-            <link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.6.2/gitalk.min.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="https://cdn.bootcss.com/gitalk/1.6.2/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '5fb16afb2a718ca12e3b',
-        clientSecret: '28775baa0069543157327491ee5972f971d7e0d4',
-        repo: 'Sweet-T.github.io',
-        owner: 'Sweet-T',
-        admin: '"Sweet-T"',
-        id: '2019-11-27T21-25-58',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
             
         </div>
     </div>

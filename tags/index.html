@@ -310,16 +310,17 @@
 </div>
 <!-- 每日一图Bing -->
 <script>
-    $.ajax({
-        type: "get",
-        url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
-        crossDomain: true,
-        success: function (response) {
-            console.log(response)
-            picurl = 'https://cn.bing.com' + response.images['url']
-            $('.bg-cover').css('background-image', 'url(' + picurl + ')');
-        }
-    });
+    // $.ajax({
+    //     type: "get",
+    //     url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+    //     crossDomain: true,
+    //     success: function (response) {
+    //         console.log(response)
+    //         picurl = 'https://cn.bing.com' + response.images['url']
+    //         $('.bg-cover').css('background-image', 'url(' + picurl + ')');
+    //     }
+    // });
+    $('.bg-cover').css('background-image', 'url("http://pic.netbian.com/uploads/allimg/190917/183634-1568716594f366.jpg")');
 </script>
     </div>
 </div>
@@ -481,15 +482,6 @@
                 </a>
                 
                 
-                <a href="/tags/GitHub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="GitHub基本使用: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="GitHub基本使用" style="background-color: #F5EEF8;">GitHub基本使用
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/ART-Template-%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/" title="ART-Template 模板引擎: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -503,6 +495,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="页面渲染库" style="background-color: #FEF9E7;">页面渲染库
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/GitHub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="GitHub基本使用: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="GitHub基本使用" style="background-color: #F5EEF8;">GitHub基本使用
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -603,7 +604,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"ajax","weight":1,"link":"https://sweet-t.github.io/tags/ajax/"},{"text":"Cookie","weight":1,"link":"https://sweet-t.github.io/tags/Cookie/"},{"text":"JavaScript","weight":9,"link":"https://sweet-t.github.io/tags/JavaScript/"},{"text":"jQuery","weight":1,"link":"https://sweet-t.github.io/tags/jQuery/"},{"text":"面向对象","weight":1,"link":"https://sweet-t.github.io/tags/面向对象/"},{"text":"JavaScript基础","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript基础/"},{"text":"数组基础用法","weight":1,"link":"https://sweet-t.github.io/tags/数组基础用法/"},{"text":"JavaScript逻辑运算","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript逻辑运算/"},{"text":"JavaScript流程控制","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript流程控制/"},{"text":"JavaScript高级（面向对象）","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript高级（面向对象）/"},{"text":"JavaScript高级（ES6语法）","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript高级（ES6语法）/"},{"text":"NodeJS","weight":1,"link":"https://sweet-t.github.io/tags/NodeJS/"},{"text":"前后端交互","weight":1,"link":"https://sweet-t.github.io/tags/前后端交互/"},{"text":"数据可视化库","weight":1,"link":"https://sweet-t.github.io/tags/数据可视化库/"},{"text":"Web API","weight":1,"link":"https://sweet-t.github.io/tags/Web-API/"},{"text":"DOM&BOM","weight":1,"link":"https://sweet-t.github.io/tags/DOM-BOM/"},{"text":"GitHub基本使用","weight":1,"link":"https://sweet-t.github.io/tags/GitHub基本使用/"},{"text":"ART-Template 模板引擎","weight":1,"link":"https://sweet-t.github.io/tags/ART-Template-模板引擎/"},{"text":"页面渲染库","weight":1,"link":"https://sweet-t.github.io/tags/页面渲染库/"},{"text":"vue","weight":2,"link":"https://sweet-t.github.io/tags/vue/"},{"text":"手写JS效果","weight":1,"link":"https://sweet-t.github.io/tags/手写JS效果/"},{"text":"手写轮播图","weight":1,"link":"https://sweet-t.github.io/tags/手写轮播图/"},{"text":"小程序","weight":1,"link":"https://sweet-t.github.io/tags/小程序/"},{"text":"Promise","weight":1,"link":"https://sweet-t.github.io/tags/Promise/"},{"text":"正则表达式","weight":1,"link":"https://sweet-t.github.io/tags/正则表达式/"},{"text":"HTML5","weight":1,"link":"https://sweet-t.github.io/tags/HTML5/"},{"text":"CSS3","weight":1,"link":"https://sweet-t.github.io/tags/CSS3/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"ajax","weight":1,"link":"https://sweet-t.github.io/tags/ajax/"},{"text":"Cookie","weight":1,"link":"https://sweet-t.github.io/tags/Cookie/"},{"text":"JavaScript","weight":9,"link":"https://sweet-t.github.io/tags/JavaScript/"},{"text":"jQuery","weight":1,"link":"https://sweet-t.github.io/tags/jQuery/"},{"text":"面向对象","weight":1,"link":"https://sweet-t.github.io/tags/面向对象/"},{"text":"JavaScript基础","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript基础/"},{"text":"数组基础用法","weight":1,"link":"https://sweet-t.github.io/tags/数组基础用法/"},{"text":"JavaScript逻辑运算","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript逻辑运算/"},{"text":"JavaScript流程控制","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript流程控制/"},{"text":"JavaScript高级（面向对象）","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript高级（面向对象）/"},{"text":"JavaScript高级（ES6语法）","weight":1,"link":"https://sweet-t.github.io/tags/JavaScript高级（ES6语法）/"},{"text":"NodeJS","weight":1,"link":"https://sweet-t.github.io/tags/NodeJS/"},{"text":"前后端交互","weight":1,"link":"https://sweet-t.github.io/tags/前后端交互/"},{"text":"数据可视化库","weight":1,"link":"https://sweet-t.github.io/tags/数据可视化库/"},{"text":"Web API","weight":1,"link":"https://sweet-t.github.io/tags/Web-API/"},{"text":"DOM&BOM","weight":1,"link":"https://sweet-t.github.io/tags/DOM-BOM/"},{"text":"ART-Template 模板引擎","weight":1,"link":"https://sweet-t.github.io/tags/ART-Template-模板引擎/"},{"text":"页面渲染库","weight":1,"link":"https://sweet-t.github.io/tags/页面渲染库/"},{"text":"GitHub基本使用","weight":1,"link":"https://sweet-t.github.io/tags/GitHub基本使用/"},{"text":"vue","weight":2,"link":"https://sweet-t.github.io/tags/vue/"},{"text":"手写JS效果","weight":1,"link":"https://sweet-t.github.io/tags/手写JS效果/"},{"text":"手写轮播图","weight":1,"link":"https://sweet-t.github.io/tags/手写轮播图/"},{"text":"小程序","weight":1,"link":"https://sweet-t.github.io/tags/小程序/"},{"text":"Promise","weight":1,"link":"https://sweet-t.github.io/tags/Promise/"},{"text":"正则表达式","weight":1,"link":"https://sweet-t.github.io/tags/正则表达式/"},{"text":"HTML5","weight":1,"link":"https://sweet-t.github.io/tags/HTML5/"},{"text":"CSS3","weight":1,"link":"https://sweet-t.github.io/tags/CSS3/"}], {
         autoResize: true
     });
 </script>

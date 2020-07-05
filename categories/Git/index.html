@@ -310,16 +310,17 @@
 </div>
 <!-- 每日一图Bing -->
 <script>
-    $.ajax({
-        type: "get",
-        url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
-        crossDomain: true,
-        success: function (response) {
-            console.log(response)
-            picurl = 'https://cn.bing.com' + response.images['url']
-            $('.bg-cover').css('background-image', 'url(' + picurl + ')');
-        }
-    });
+    // $.ajax({
+    //     type: "get",
+    //     url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+    //     crossDomain: true,
+    //     success: function (response) {
+    //         console.log(response)
+    //         picurl = 'https://cn.bing.com' + response.images['url']
+    //         $('.bg-cover').css('background-image', 'url(' + picurl + ')');
+    //     }
+    // });
+    $('.bg-cover').css('background-image', 'url("http://pic.netbian.com/uploads/allimg/190917/183634-1568716594f366.jpg")');
 </script>
     </div>
 </div>

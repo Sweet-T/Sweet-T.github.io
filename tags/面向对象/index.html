@@ -310,16 +310,17 @@
 </div>
 <!-- 每日一图Bing -->
 <script>
-    $.ajax({
-        type: "get",
-        url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
-        crossDomain: true,
-        success: function (response) {
-            console.log(response)
-            picurl = 'https://cn.bing.com' + response.images['url']
-            $('.bg-cover').css('background-image', 'url(' + picurl + ')');
-        }
-    });
+    // $.ajax({
+    //     type: "get",
+    //     url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+    //     crossDomain: true,
+    //     success: function (response) {
+    //         console.log(response)
+    //         picurl = 'https://cn.bing.com' + response.images['url']
+    //         $('.bg-cover').css('background-image', 'url(' + picurl + ')');
+    //     }
+    // });
+    $('.bg-cover').css('background-image', 'url("http://pic.netbian.com/uploads/allimg/190917/183634-1568716594f366.jpg")');
 </script>
     </div>
 </div>
@@ -481,15 +482,6 @@
                 </a>
                 
                 
-                <a href="/tags/GitHub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="GitHub基本使用: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="GitHub基本使用" style="background-color: #F5EEF8;">GitHub基本使用
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/ART-Template-%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/" title="ART-Template 模板引擎: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -503,6 +495,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="页面渲染库" style="background-color: #FEF9E7;">页面渲染库
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/GitHub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="GitHub基本使用: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="GitHub基本使用" style="background-color: #F5EEF8;">GitHub基本使用
                         <span class="tag-length">1</span>
                     </span>
                 </a>
