@@ -313,6 +313,7 @@
     $.ajax({
         type: "get",
         url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+        crossDomain: true,
         success: function (response) {
             console.log(response)
             picurl = 'https://cn.bing.com' + response.images['url']

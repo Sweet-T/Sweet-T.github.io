@@ -313,6 +313,7 @@
     $.ajax({
         type: "get",
         url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+        crossDomain: true,
         success: function (response) {
             console.log(response)
             picurl = 'https://cn.bing.com' + response.images['url']
@@ -363,10 +364,28 @@
                 </a>
                 
                 
+                <a href="/tags/jQuery/" title="jQuery: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="jQuery" style="background-color: #E8F8F5;">jQuery
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="面向对象: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="面向对象" style="background-color: #FEF9E7;">面向对象
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/JavaScript%E5%9F%BA%E7%A1%80/" title="JavaScript基础: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="JavaScript基础" style="background-color: #E8F8F5;">JavaScript基础
+                            data-tagname="JavaScript基础" style="background-color: #F8F9F9;">JavaScript基础
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -375,7 +394,7 @@
                 <a href="/tags/%E6%95%B0%E7%BB%84%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" title="数组基础用法: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="数组基础用法" style="background-color: #FEF9E7;">数组基础用法
+                            data-tagname="数组基础用法" style="background-color: #82E0AA;">数组基础用法
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -384,7 +403,7 @@
                 <a href="/tags/JavaScript%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/" title="JavaScript逻辑运算: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="JavaScript逻辑运算" style="background-color: #F8F9F9;">JavaScript逻辑运算
+                            data-tagname="JavaScript逻辑运算" style="background-color: #D7BDE2;">JavaScript逻辑运算
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -393,16 +412,7 @@
                 <a href="/tags/JavaScript%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/" title="JavaScript流程控制: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="JavaScript流程控制" style="background-color: #82E0AA;">JavaScript流程控制
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/JavaScript%E9%AB%98%E7%BA%A7%EF%BC%88ES6%E8%AF%AD%E6%B3%95%EF%BC%89/" title="JavaScript高级（ES6语法）: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="JavaScript高级（ES6语法）" style="background-color: #D7BDE2;">JavaScript高级（ES6语法）
+                            data-tagname="JavaScript流程控制" style="background-color: #A3E4D7;">JavaScript流程控制
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -411,25 +421,16 @@
                 <a href="/tags/JavaScript%E9%AB%98%E7%BA%A7%EF%BC%88%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%89/" title="JavaScript高级（面向对象）: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="JavaScript高级（面向对象）" style="background-color: #A3E4D7;">JavaScript高级（面向对象）
+                            data-tagname="JavaScript高级（面向对象）" style="background-color: #85C1E9;">JavaScript高级（面向对象）
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/" title="数据可视化库: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="数据可视化库" style="background-color: #85C1E9;">数据可视化库
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/jQuery/" title="jQuery: 1">
+                <a href="/tags/JavaScript%E9%AB%98%E7%BA%A7%EF%BC%88ES6%E8%AF%AD%E6%B3%95%EF%BC%89/" title="JavaScript高级（ES6语法）: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="jQuery" style="background-color: #F8C471;">jQuery
+                            data-tagname="JavaScript高级（ES6语法）" style="background-color: #F8C471;">JavaScript高级（ES6语法）
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -453,19 +454,10 @@
                 </a>
                 
                 
-                <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="面向对象: 1">
+                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/" title="数据可视化库: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="面向对象" style="background-color: #FEF9E7;">面向对象
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/GitHub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="GitHub基本使用: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="GitHub基本使用" style="background-color: #F5EEF8;">GitHub基本使用
+                             chip-active "
+                            data-tagname="数据可视化库" style="background-color: #F8F9F9;">数据可视化库
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -489,6 +481,15 @@
                 </a>
                 
                 
+                <a href="/tags/GitHub%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="GitHub基本使用: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="GitHub基本使用" style="background-color: #F5EEF8;">GitHub基本使用
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/ART-Template-%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/" title="ART-Template 模板引擎: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
@@ -507,11 +508,11 @@
                 </a>
                 
                 
-                <a href="/tags/%E6%89%8B%E5%86%99%E8%BD%AE%E6%92%AD%E5%9B%BE/" title="手写轮播图: 1">
+                <a href="/tags/vue/" title="vue: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="手写轮播图" style="background-color: #82E0AA;">手写轮播图
-                        <span class="tag-length">1</span>
+                            data-tagname="vue" style="background-color: #85C1E9;">vue
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -520,6 +521,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="手写JS效果" style="background-color: #A3E4D7;">手写JS效果
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%89%8B%E5%86%99%E8%BD%AE%E6%92%AD%E5%9B%BE/" title="手写轮播图: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="手写轮播图" style="background-color: #82E0AA;">手写轮播图
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -566,15 +576,6 @@
                              chip-default "
                             data-tagname="CSS3" style="background-color: #85C1E9;">CSS3
                         <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/vue/" title="vue: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="vue" style="background-color: #85C1E9;">vue
-                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 

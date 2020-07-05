@@ -313,6 +313,7 @@
     $.ajax({
         type: "get",
         url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+        crossDomain: true,
         success: function (response) {
             console.log(response)
             picurl = 'https://cn.bing.com' + response.images['url']
@@ -346,20 +347,20 @@
                 </a>
                 
                 
-                <a href="/categories/%E5%BA%93/" title="库: 2">
+                <a href="/categories/%E5%90%8E%E7%AB%AF/" title="后端: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F5EEF8;">库
-                        <span class="tag-length">2</span>
+                             chip-default "
+                            style="background-color: #F5EEF8;">后端
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%90%8E%E7%AB%AF/" title="后端: 1">
+                <a href="/categories/%E5%BA%93/" title="库: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">后端
-                        <span class="tag-length">1</span>
+                             chip-active "
+                            style="background-color: #D5F5E3;">库
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 

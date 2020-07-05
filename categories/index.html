@@ -313,6 +313,7 @@
     $.ajax({
         type: "get",
         url: "http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+        crossDomain: true,
         success: function (response) {
             console.log(response)
             picurl = 'https://cn.bing.com' + response.images['url']
@@ -346,20 +347,20 @@
                 </a>
                 
                 
-                <a href="/categories/%E5%BA%93/" title="库: 2">
+                <a href="/categories/%E5%90%8E%E7%AB%AF/" title="后端: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">库
-                        <span class="tag-length">2</span>
+                            style="background-color: #F5EEF8;">后端
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%90%8E%E7%AB%AF/" title="后端: 1">
+                <a href="/categories/%E5%BA%93/" title="库: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">后端
-                        <span class="tag-length">1</span>
+                            style="background-color: #D5F5E3;">库
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -432,7 +433,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"前端","max":17},{"name":"库","max":17},{"name":"后端","max":17},{"name":"Git","max":17},{"name":"读书笔记","max":17},{"name":"VUE","max":17}],
+            indicator: [{"name":"前端","max":17},{"name":"后端","max":17},{"name":"库","max":17},{"name":"Git","max":17},{"name":"读书笔记","max":17},{"name":"VUE","max":17}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -443,7 +444,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [16,2,1,1,1,1],
+                    value : [16,1,2,1,1,1],
                     name : '文章分类数量'
                 }
             ]
